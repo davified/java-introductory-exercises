@@ -17,4 +17,19 @@ public class TriangleTest {
         assertEquals("*", triangle.drawOne());
     }
 
+    @Test
+    public void drawHorizontalLine() throws Exception {
+        assertEquals("*****", triangle.drawHorizontalLine(5));
+    }
+
+    @Test
+    public void drawVerticalLine() throws Exception {
+        assertEquals("*\n*\n*\n*\n*\n", triangle.drawVerticalLine(5));
+    }
+
+    @Test
+    public void drawRightTriangle() throws Exception {
+        assertEquals("*\n**\n***\n****\n", triangle.drawRightTriangle(4));
+    }
+
 }

@@ -47,4 +47,8 @@ public class TriangleTest {
         assertEquals("  *  \n *** \n*****\n *** \n  *  \n", triangle.drawDiamondTriangle(3));
     }
 
+    @Test
+    public void drawDiamondTriangleWithName() throws Exception {
+        assertEquals("  *  \n *** \nBill\n *** \n  *  \n", triangle.drawDiamondTriangleWithName(3, "Bill"));
+    }
 }

@@ -72,4 +72,11 @@ public class Triangle {
 
         return finalOutput;
     }
+
+    public String drawDiamondTriangleWithName(int n, String name) {
+        String tempString = drawDiamondTriangle(n);
+        String lineToBeReplaced = new String(new char[n*2 - 1]).replace("\0", "*");
+        String output = tempString.replace(lineToBeReplaced, name);
+        return output;
+    }
 }

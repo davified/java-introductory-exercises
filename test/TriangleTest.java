@@ -32,4 +32,19 @@ public class TriangleTest {
         assertEquals("*\n**\n***\n****\n", triangle.drawRightTriangle(4));
     }
 
+    @Test
+    public void drawIsoscelesTriangle() throws Exception {
+        assertEquals("  *  \n *** \n*****\n", triangle.drawIsoscelesTriangle(3));
+    }
+
+    @Test
+    public void drawBigIsoscelesTriangle() throws Exception {
+        assertEquals("    *    \n   ***   \n  *****  \n ******* \n*********\n", triangle.drawIsoscelesTriangle(5));
+    }
+
+    @Test
+    public void drawDiamondTriangle() throws Exception {
+        assertEquals("  *  \n *** \n*****\n *** \n  *  \n", triangle.drawDiamondTriangle(3));
+    }
+
 }
